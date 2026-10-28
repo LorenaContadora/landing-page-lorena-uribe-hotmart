@@ -9,7 +9,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-<link rel="icon" type="image/png" href="favicon.png">
+<link rel="icon" type="image/png" href="img/favicon.png">
 <link rel="stylesheet" href="css/styles.css">
 <script>document.documentElement.className="js"</script>
 </head>
@@ -19,7 +19,7 @@
 <header class="top">
   <div class="wrap top__in">
     <a class="logo" href="#" aria-label="EscueLU — inicio">
-      <img src="img/logo.png" alt="EscueLU — Lorena Uribe, asesorías contables, financieras y tributarias" width="520" height="210">
+      <img src="img/Logo-EscueLU.jpg" alt="EscueLU — Lorena Uribe, asesorías contables, financieras y tributarias" width="520" height="210">
     </a>
     <a class="btn btn--sm" href="#precios">Ver planes</a>
   </div>
@@ -32,27 +32,30 @@
   <div class="wrap hero__in">
     <div class="hero__text">
       <!-- Variante A (activa): orientada al beneficio -->
-      <h1 id="hero-h1">EscueLU, hecho para que aprendas "a lo coquito"</h1>
+      <h1 id="hero-h1">Aprende contabilidad e impuestos "a lo coquito."</h1>
       <!-- Variante B (A/B test): descomenta para probar
       <h1 id="hero-h1">Aprende contabilidad e impuestos con quien los vive hace 20 años</h1>
       -->
-      <p class="lead">Con EscueLU aprendes desde cero o te actualizas, con ejemplos reales de Colombia, en el tiempo que tengas disponible.</p>
+      <p class="lead">Cursos prácticos con Lorena Uribe para entender la normativa colombiana, resolver casos reales y aplicar lo aprendido a tu trabajo.</p>
       <ul class="hero__trust" aria-label="Ventajas principales">
         <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Sin horarios fijos</li>
         <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Casos reales de Colombia</li>
         <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Cancela cuando quieras</li>
       </ul>
       <div class="presenter">
-        <img src="img/lorena-hero.jpg" alt="Lorena Uribe, Contadora Pública" width="64" height="64" loading="lazy">
+        <img src="img/lorena-hero.jpg" alt="Lorena Uribe, Contadora Pública" width="64" height="64">
         <p><strong>Lorena Uribe</strong><br>Contadora Pública, más de 20 años de experiencia</p>
       </div>
     </div>
     <div class="hero__media">
       <!-- PLACEHOLDER: reemplaza M7lc1UVf-VE por el ID de tu video de YouTube (lo que va después de v= en el link) -->
       <div class="video">
-        <iframe src="https://www.youtube.com/embed/M7lc1UVf-VE" title="Video de bienvenida de Lorena Uribe a EscueLU" loading="lazy" allow="accelerometer; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+        <video width="100%" height="100%" controls preload="metadata" poster="img/Logo-EscueLU.jpg">
+          <source src="img/video-hero.mp4" type="video/mp4">
+          Tu navegador no soporta la etiqueta de video.
+        </video>
       </div>
-      <p class="video__tag"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Marcador de posición: cambia el ID del video de bienvenida en <code>index.html</code></p>
+      <!--<p class="video__tag"><i class="fa-solid fa-circle-info" aria-hidden="true"></i> Marcador de posición: cambia el ID del video de bienvenida en <code>index.html</code></p>-->
       <a class="btn btn--lg btn--pulse" href="#precios">Ver planes y empezar &rarr;</a>
     </div>
   </div>
@@ -61,7 +64,11 @@
 <!-- 2. AUDIENCIA / "¿Para quién?" -->
 <section class="sec" aria-labelledby="t-para">
   <div class="wrap">
-    <h2 id="t-para" class="center">EscueLU es para ti si eres…</h2>
+    <!-- <h2 id="t-para" class="center">EscueLU es para ti si eres…</h2>-->
+    <div class="center">
+      <img src="img/Logo-EscueLU.jpg" alt="EscueLU" class="title-logo">
+      <h2 id="t-para">es para ti si eres...</h2>
+    </div>
     <div class="grid3">
       <article class="card">
         <i class="fa-solid fa-graduation-cap ico" aria-hidden="true"></i>
@@ -108,48 +115,51 @@
 <!-- 4. CURSOS -->
 <section class="sec" id="cursos" aria-labelledby="t-cursos">
   <div class="wrap">
-    <h2 id="t-cursos" class="center">Nuestros cursos y talleres</h2>
+    <h2 id="t-cursos" class="center">Algunos de nuestros cursos y talleres</h2>
     <p class="center sub">Haz clic en un curso para ver los temas que incluye.</p>
     <div class="acc acc--courses">
-      <h3><button class="acc__btn" aria-expanded="false" aria-controls="c1" id="bc1"><span><i class="fa-solid fa-book-open" aria-hidden="true"></i>[Nombre del curso 1]</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></h3>
+      <h3><button class="acc__btn" aria-expanded="false" aria-controls="c1" id="bc1"><span><i class="fa-solid fa-book-open" aria-hidden="true"></i>Exógena</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></h3>
       <div class="acc__panel" id="c1" role="region" aria-labelledby="bc1" hidden>
-        <p>[Descripción corta del curso 1]</p>
+        <p>Domina la preparación, validación y reporte de la información exógena ante la DIAN, asegurando cruces exactos y evitando sanciones.</p>
         <ul class="checks">
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 1]</li>
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 2]</li>
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 3]</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Normatividad vigente y determinación de los obligados a reportar</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Estructura y diligenciamiento de los formatos principales (1001, 1003, etc.)</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Cruce de información contable vs. fiscal y auditoría previa</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Manejo del prevalidador de la DIAN y presentación exitosa</li>
         </ul>
           <div class="course-cta">
-          <p class="course-price">$ [PRECIO] <small>COP</small></p>
-          <a class="btn" href="https://pay.hotmart.com/REEMPLAZA-ENLACE-CURSO-1" target="_blank" rel="noopener" data-item="[Nombre del curso 1]">Comprar este curso &rarr;</a>
+          <!--<p class="course-price">$ [PRECIO] <small>COP</small></p>-->
+          <a class="btn" href="https://pay.hotmart.com/REEMPLAZA-ENLACE-CURSO-1" target="_blank" rel="noopener" data-item="Exógena">Aprende Por Solo $250.000 &rarr;</a>
           <a class="course-vip" href="#precios">o accede a todos con la Suscripción VIP</a>
         </div>
       </div>
-      <h3><button class="acc__btn" aria-expanded="false" aria-controls="c2" id="bc2"><span><i class="fa-solid fa-book-open" aria-hidden="true"></i>[Nombre del curso 2]</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></h3>
+      <h3><button class="acc__btn" aria-expanded="false" aria-controls="c2" id="bc2"><span><i class="fa-solid fa-book-open" aria-hidden="true"></i>IVA (Prorrateo y AIU)</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></h3>
       <div class="acc__panel" id="c2" role="region" aria-labelledby="bc2" hidden>
-        <p>[Descripción corta del curso 2]</p>
+        <p>Aprende el tratamiento contable y tributario del IVA con un enfoque práctico en el cálculo del prorrateo y la facturación de servicios especiales.</p>
         <ul class="checks">
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 1]</li>
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 2]</li>
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 3]</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Fundamentos del IVA y clasificación de bienes y servicios</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Metodología paso a paso para el cálculo del prorrateo de IVA</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Tratamiento tributario y facturación en contratos con figura AIU (Administración, Imprevistos y Utilidad)</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Casos prácticos y diligenciamiento del formulario 300</li>
         </ul>
           <div class="course-cta">
-          <p class="course-price">$ [PRECIO] <small>COP</small></p>
-          <a class="btn" href="https://pay.hotmart.com/REEMPLAZA-ENLACE-CURSO-1" target="_blank" rel="noopener" data-item="[Nombre del curso 1]">Comprar este curso &rarr;</a>
+          <!--<p class="course-price">$ [PRECIO] <small>COP</small></p>-->
+          <a class="btn" href="https://pay.hotmart.com/REEMPLAZA-ENLACE-CURSO-1" target="_blank" rel="noopener" data-item="IVA (Prorrateo y AIU)">Aprende Por Solo $200.000 &rarr;</a>
           <a class="course-vip" href="#precios">o accede a todos con la Suscripción VIP</a>
         </div>
       </div>
-      <h3><button class="acc__btn" aria-expanded="false" aria-controls="c3" id="bc3"><span><i class="fa-solid fa-book-open" aria-hidden="true"></i>[Nombre del curso 3]</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></h3>
+      <h3><button class="acc__btn" aria-expanded="false" aria-controls="c3" id="bc3"><span><i class="fa-solid fa-book-open" aria-hidden="true"></i>Declaración de Renta Persona Natural</span><i class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></h3>
       <div class="acc__panel" id="c3" role="region" aria-labelledby="bc3" hidden>
-        <p>[Descripción corta del curso 3]</p>
+        <p>Taller integral para liquidar y presentar la declaración de renta aplicando el sistema cedular y aprovechando los beneficios tributarios legales.</p>
         <ul class="checks">
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 1]</li>
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 2]</li>
-          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> [Tema 3]</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Determinación de obligados a declarar y residencia fiscal</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Clasificación y depuración de ingresos mediante el sistema de rentas cedulares</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Identificación de ingresos no constitutivos, deducciones y rentas exentas aplicables</li>
+          <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i>Manejo del patrimonio, conciliación patrimonial y rentas comparativas</li>
         </ul>
           <div class="course-cta">
-          <p class="course-price">$ [PRECIO] <small>COP</small></p>
-          <a class="btn" href="https://pay.hotmart.com/REEMPLAZA-ENLACE-CURSO-1" target="_blank" rel="noopener" data-item="[Nombre del curso 1]">Comprar este curso &rarr;</a>
+          <!--<p class="course-price">$ [PRECIO] <small>COP</small></p>-->
+          <a class="btn" href="https://pay.hotmart.com/REEMPLAZA-ENLACE-CURSO-1" target="_blank" rel="noopener" data-item="Declaración de Renta Persona Natural">Aprende Por Solo $200.000 &rarr;</a>
           <a class="course-vip" href="#precios">o accede a todos con la Suscripción VIP</a>
         </div>
       </div>
@@ -191,8 +201,8 @@
 
       <article class="plan">
         <h3>Cursos individuales</h3>
-        <p class="plan__sub">Perfecto si ya sabes qué tema necesitas.</p>
-        <p class="price">$ [PRECIO] <small>COP / por curso</small></p>
+        <p class="plan__sub">Perfecto si ya sabes qué tema necesitas DESDE.</p>
+        <p class="price">$150.000 <small>COP</small></p>
         <ul class="checks">
           <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> El taller que elijas</li>
           <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Material de apoyo incluido</li>
@@ -206,8 +216,8 @@
       <article class="plan plan--vip">
         <span class="badge">La opción más completa</span>
         <h3>Suscripción VIP</h3>
-        <p class="plan__sub">Para quien quiere aprender sin límites ni sorpresas.</p>
-        <p class="price">$ [PRECIO] <small>COP / mes</small></p>
+        <p class="plan__sub">Para aprender sin límites ni sorpresas.</p>
+        <p class="price">$300.000 <small>COP / mes</small></p>
         <ul class="checks">
           <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Todos los cursos y talleres del catálogo</li>
           <li><i class="fa-solid fa-circle-check" aria-hidden="true"></i> Contenido nuevo cada temporada</li>
@@ -311,7 +321,7 @@
 
 <footer class="foot">
   <div class="wrap foot__in">
-    <img class="foot__logo" src="C:\Users\Teo\Downloads\landing-page-hortmart-lorena V2\img\logo.png" alt="EscueLU — Lorena Uribe" width="520" height="210">
+    <img class="foot__logo" src="img/Logo-EscueLU.jpg" alt="EscueLU — Lorena Uribe" width="520" height="210">
     <p>© <span id="year">2026</span> Lorena Uribe. Todos los derechos reservados.</p>
     <nav aria-label="Políticas">
       <a href="#">Política de privacidad</a>

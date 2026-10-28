@@ -402,8 +402,9 @@ h3 { font-size: 1.1rem; font-weight: 700; }
 .course-cta {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
   align-items: center;
-  gap: .8rem 1.4rem;
+  gap: 0.6rem;
   margin-top: 1.4rem;
   padding-top: 1.2rem;
   border-top: 1px solid var(--line);
@@ -512,7 +513,7 @@ h3 { font-size: 1.1rem; font-weight: 700; }
 }
 .plan:hover { box-shadow: var(--shadow); transform: translateY(-2px); }
 .plan__sub { color: var(--muted); font-size: .95rem; }
-.price { font-size: 2rem; font-weight: 800; color: var(--navy); margin: .5rem 0 1.2rem; }
+.price { font-size: 2rem; font-weight: 800; color: var(--navy); margin: .5rem 0 1.2rem; text-align: center; }
 .price small { font-size: .85rem; font-weight: 500; color: var(--muted); }
 .badge {
   position: absolute;
@@ -749,3 +750,10 @@ body              { padding-bottom: 72px; }
   .js .reveal-child { opacity: 1 !important; transform: none !important; }
 }
 
+/* Tamaño y centrado del logo en los títulos */
+.title-logo {
+  max-width: 260px; /* Puedes subir o bajar este número para cambiar el tamaño del logo */
+  height: auto;
+  display: block;
+  margin: -5rem auto 0.5rem auto; /* Lo centra y deja un espacio antes del texto */
+}
