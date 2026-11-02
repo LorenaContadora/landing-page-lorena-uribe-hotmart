@@ -750,10 +750,18 @@ body              { padding-bottom: 72px; }
   .js .reveal-child { opacity: 1 !important; transform: none !important; }
 }
 
-/* Tamaño y centrado del logo en los títulos */
+/* Tamaño y centrado del logo en los títulos (Celulares) */
 .title-logo {
-  max-width: 260px; /* Puedes subir o bajar este número para cambiar el tamaño del logo */
+  max-width: 220px; /* Un poco más pequeño para que respire en móvil */
   height: auto;
   display: block;
-  margin: -5rem auto 0.5rem auto; /* Lo centra y deja un espacio antes del texto */
+  margin: -1rem auto 0.5rem auto; /* Margen negativo muy suave en celulares */
+}
+
+/* Ajuste para pantallas más grandes (Tabletas y Computadoras) */
+@media (min-width: 768px) {
+  .title-logo {
+    max-width: 260px;
+    margin: -5rem auto 0.5rem auto; /* Mantiene el ajuste original en PC */
+  }
 }
